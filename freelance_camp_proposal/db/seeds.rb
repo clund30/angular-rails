@@ -1,7 +1,7 @@
 5.times do |proposal|
   Proposal.create!(
     customer: "Customer #{proposal}",
-    portfolio_url: 'http://https://cl-devcamp-portfolio.herokuapp.com',
+    portfolio_url: 'https://cl-devcamp-portfolio.herokuapp.com',
     tools: 'Ruby on Rails, Angular 2, and Postgres',
     estimated_hours: (80 + proposal),
     hourly_rate: 120,
