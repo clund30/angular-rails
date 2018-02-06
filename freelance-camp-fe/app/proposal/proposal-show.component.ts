@@ -1,7 +1,7 @@
 import { Component, OnInit, Input } from '@angular/core';
 import { ActivatedRoute, Params } from '@angular/router';
 import { Http, Response, Headers, RequestOptions } from '@angular/http';
-import { Observable } from 'rxj/Rx';
+import { Observable } from 'rxjs/Rx';
 
 import { Proposal } from './proposal';
 import { ProposalService } from './proposal.service';
@@ -16,7 +16,7 @@ import { ProposalService } from './proposal.service';
 })
 export class ProposalShowComponent implements OnInit {
   constructor(
-    private http: Http;
+    private http: Http,
     private proposalService: ProposalService,
     private route: ActivatedRoute
     ) {}
